@@ -7,7 +7,6 @@ public class User {
     @JsonProperty(value = "first_name")
     private String firstName;
 
-
     public User() {}
 
     public User(String firstName) {

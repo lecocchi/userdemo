@@ -1,5 +1,6 @@
 package ar.com.comafi.repository;
 
+import ar.com.comafi.exception.ConnectionException;
 import ar.com.comafi.model.User;
 import org.springframework.stereotype.Repository;
 
@@ -7,6 +8,6 @@ import org.springframework.stereotype.Repository;
 public class UserRepository {
 
     public User save(User user){
-        return user;
+        throw new ConnectionException("Hubo un error en la base de datos", 1025);
     }
 }
